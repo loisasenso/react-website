@@ -1,0 +1,46 @@
+
+.tagline {
+    font-family: serif ;
+    font-size: 5em;
+    padding: 2rem;
+}
+
+.tagline::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 2px;
+    background: black;
+}
+
+.home_profile_pic {
+    float: left;
+}
+
+.btn {
+    margin-top: 2.5rem;
+    width: auto;
+
+}
+
+.home_content{
+    display: flex;
+}
+
+.home_profile_pic {
+    float: right;
+}
+
+.home_text {
+    padding: 2rem;
+    justify-self: center;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+

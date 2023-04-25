@@ -1,0 +1,21 @@
+.about_tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.about_tab {
+    background: lightblue;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    text-align: center;  
+    height: 80vh;
+}
+
+.about_tab:hover{
+    background: transparent;
+    border: 1px solid lightblue;
+}
+
+
