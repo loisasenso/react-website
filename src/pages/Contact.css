@@ -52,22 +52,22 @@ input, textarea {
         overflow-y: scroll;
    }
 
-   input, textarea{
-    width: 90%;
-    padding: .9rem;
-    align-self: center;
-   }
+    input, textarea{
+        width: 90%;
+        padding: .9rem;
+        align-self: center;
+    }
 
-   button {
-    margin: 0;
-    max-width: fit-content;
-   }
+    button {
+        margin: 0;
+        max-width: fit-content;
+    }
 
-   h5 {
-    text-align: center;
-    margin-top: 5rem;
-   }
-        
+    h5 {
+        text-align: center;
+        margin-top: 5rem;
+    }
+            
 
 }
 
