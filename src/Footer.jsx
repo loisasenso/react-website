@@ -5,11 +5,11 @@ import { Link, Outlet } from "react-router-dom";
 import "./Footer.css";
 
 //Import React Icons for Socials//
-import {BsLinkedin} from "react-icons/Bs";
-import {BsInstagram} from "react-icons/Bs";
-import {BsTwitter} from "react-icons/Bs";
-import {BsWhatsapp} from "react-icons/Bs";
-import {AiOutlineMail} from "react-icons/Ai";
+import {BsLinkedin} from "react-icons/bs";
+import {BsInstagram} from "react-icons/bs";
+import {BsTwitter} from "react-icons/bs";
+import {BsWhatsapp} from "react-icons/bs";
+import {AiOutlineMail} from "react-icons/ai";
 
 function Footer() {
   return (
