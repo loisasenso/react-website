@@ -1,14 +1,19 @@
-.navbar {
+/******** General styling for contact form *********/
+.header {
     background-color: #333;
     display: flex;
     justify-content: center;
+    height: 60px;
+    padding: 0 2rem;
+    align-items: center;
     padding: 1rem;
+    width: 100vw;
   }
-  
+
   .nav-links {
     display: flex;
     list-style: none;
-    padding: 0;
+    padding: 0 1rem;
   }
   
   .nav-links li {
@@ -21,6 +26,86 @@
   }
   
   .nav-links a:hover {
-    color: #ddd;
+    color: #d0cfcf;
+  }
+
+  .navbar_button {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
   }
   
+
+
+
+/**************MEDIA QUERIES***********/
+
+/*************Small Devices***********/
+@media only screen and (max-width: 768px) {
+  .navbar_button {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transition: 1s;
+    transform: translate(-100vh);
+    
+  }
+
+  .responsive_navbar {
+    transform: none;
+  }
+}
+
+/************* Medium Devices ***********/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .header {
+    justify-content: left;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+}
+
+/************* Large Devices ***********/
+@media only screen and (min-width:1080px) {
+  .header {
+    background-color: #333;
+    display: flex;
+    justify-content: left;
+    height: 90px;
+    padding: 0 2rem;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+
+  }
+
+  .nav-links a {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+
+ 
+}
+

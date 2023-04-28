@@ -1,12 +1,17 @@
 import React from "react";
+
+// Calltoaction function from Action.jsx File //
 import Calltoaction from "./Action";
+
+// Imports Profile Picture from Assets //
 import Profile from "../assets/Profile.png";
+
+// Imports Home Page Styling //
 import "./Home.css";
 
 function Home() {
   return (
-    <div>
-        <h1>Home</h1>
+    <div className="home">
         <h1 className="tagline">Front End Development. Writing. Risk Management & Lots of Math.</h1>
         <div className="home_content">
           <section className="home_text">
@@ -21,8 +26,7 @@ function Home() {
         
     </div>
     
-  )
-  
+  ) 
 }
 
 export default Home;

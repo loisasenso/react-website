@@ -3,15 +3,118 @@
     background-color: #333;
     display: flex;
     justify-content: center;
-    padding: 1rem;
-    display: flex;
-    margin-top: auto;
-    
-    
-  }
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5rem;
+    width: 100%;
+}
 
 .footer_text {
     color: white;
+    padding: 0; 
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.footer_logo{
+  font-size: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.pagelinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+  margin-bottom: 0;
+}
+
+.pagelinks > li {
+  list-style-type: none;
+}
+
+.pagelinks > li > a{
+  text-decoration: none;
+}
+
+
+
+/**************MEDIA QUERIES***********/
+
+/************* Small Devices ***********/
+@media only screen and (max-width: 768px) {
+  .footer {
+    background-color: #FFF;
     padding: 0;
     
+  }
+  .pagelinks {
+    visibility: hidden;
+  }
+
+  .footer_logo {
+    background: #3f3f3f;
+    padding: 0rem 0.3rem;
+    animation: slideFooter .7s ease-in ;
+    animation-delay: 2s;
+  }
+
+  @keyframes slideFooter {
+    0%{
+      transform: translateX(-500px);
+    }
+    60%{
+      transform: translateX(0px);
+    }
+    100%{
+      transform: skew(0deg);
+    }
+  }
+  
+/************* Medium Devices ***********/
+  @media only screen and (min-width: 768px) and (max-width:1080px ){
+    .pagelinks > li > a{
+      font-size: 3rem;
+    }
+  }
+}
+
+/************* Large Devices ***********/
+@media only screen and (min-width: 1080px) {
+  .pagelinks > li > a{
+    font-size: 2rem;
+  }
+
+  .pagelinks {
+    gap: 2rem;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  .footer_logo{
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
 }

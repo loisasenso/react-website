@@ -1,3 +1,4 @@
+/******** General styling Home Page *********/
 
 .tagline {
     font-family: serif ;
@@ -20,7 +21,6 @@
 .btn {
     margin-top: 2.5rem;
     width: auto;
-
 }
 
 .home_content{
@@ -35,8 +35,87 @@
     padding: 2rem;
     justify-self: center;
     font-size: 1.2rem;
+}
+
+
+
+/**************MEDIA QUERIES***********/
+
+/*************Small Devices***********/
+@media only screen and (max-width: 768px) {
+    .home {
+        height: 100%;
+        width: 100%;  
+    }
+    .tagline {
+        font-size: 3rem;
+    }
+
+    .home_content {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .home_profile_pic > img {
+        float: right;
+        width: 100%; 
+    }
+    .home_text {
+        font-size: 1rem;
+    }
+}
+
+
+/************* Medium Devices***********/
+@media only screen and (min-width: 768px) and (max-width:1080px ){
+    .home {
+        height: 100%;
+        width: 100%;
+    }
+    .tagline {
+        font-size: 4em;
+    }
+    .home_content {
+        display:flex;
+        flex-direction: column;
+    }
+    .home_profile_pic {
+        padding: 2rem;
+    }
+    .home_profile_pic > img {
+        float: right;
+        width: 100%;
+    }
+    .home_text {
+        font-size: 1.5rem;
+    }
+}
+
+
+/************* Large Devices***********/
+@media only screen and (min-width: 1080px) {
+    .home {
+        height: 100%;
+        width: 100%;   
+
+    }
+    .tagline {
+        font-size: 6rem;
+
+    }
+    .home_text {
+        font-size: 1.5rem;
+        display: block;
+        height: 300px;
+        width: 900px;
+    }
+    .call_action_buttons {
+        font-size: 2rem;
+    }
 
 }
+
+    
 
 
 
